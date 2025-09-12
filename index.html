@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Simple Countdown Timer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer">
+    <div class="display" id="display">00:00:10</div>
+    
+    <!-- time input -->
+    <div>
+      <input id="mins" type="number" placeholder="MM" min="0" max="59">
+      <input id="secs" type="number" placeholder="SS" min="0" max="59">
+      <button onclick="setTime()">Set</button>
+    </div>
+
+    <!-- control buttons -->
+    <div>
+      <button class="start" onclick="startTimer()">Start</button>
+      <button class="pause" onclick="pauseTimer()">Pause</button>
+      <button class="reset" onclick="resetTimer()">Reset</button>
+    </div>
+
+    <button class="theme" onclick="toggleTheme()">🌙 Toggle Theme</button>
+  </div>
+
+<script src="script.js"> </script>
+</body>
+</html>
